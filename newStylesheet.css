@@ -1,0 +1,155 @@
+body {
+ font-family: Georgia, "Baghdad", Times, serif;
+ color: black;
+}
+
+#login{
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+/* The following are style definitions for each of the three separated containers or sections, it defined their formar, their background colour, size, etc.  */
+#header {
+  display:inline-block;
+  background-color: #DAD7D7;
+  width:100%;
+  height:130px;
+  text-align: center;
+  font-family: "Arial", Arial, serif;
+  font-size: 5vh;
+  color: black;
+}
+#sidebar-left{
+  /*float:left;*/
+  width:60%;
+  height: 20vh;
+  background-color: #6BA099 ;
+  text-align: center;
+  top:0;
+  margin:0;
+  padding:2% 2%;
+  overflow:auto;
+  float: left;
+  color:#805A15;
+
+}
+#main{
+  resize: both;
+  overflow: auto;
+  font-size: 100%;
+  float:left;
+  width:100%;
+  height:83vh;
+  background-color: #858080;
+}
+
+/* The following are style definitions for the navigation bar and also the links and how they are formatted/how they should look */
+ul.navbar {
+ list-style-type: none;
+ padding: 0% 0%;
+ margin: 0;
+ position: relative;
+ top: 2em;
+ left: 0em;
+ width: 100%;
+}
+ ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-left: 1em solid teal;
+  width: 80%;
+}
+ ul.navbar a {
+  text-decoration: none }
+
+  ul.list {
+    margin: 0.5em 0;
+    padding: 1.2em;
+    padding-top: 0.4em;
+    list-style-type: disc;
+    text-align: left;
+  }
+  /* The following is part of the style for the navigation bar, it defined the colour the links should turn when clicked on, as to indicate to the user what links they have previously clicked on */
+ a:link {
+  color: blue
+}
+ a:visited {
+  color: purple
+}
+ a:hover {
+   color: teal;
+ }
+
+  h1 {
+    padding-top: 3em;
+    padding-bottom: 0.1em;
+    font-size: 20px;
+    color: #805A15;
+  }
+
+/* The following are style definitions for the table use in the main page */
+table {
+  width:170px;
+  height:100px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  border-spacing: 3px;
+  position: relative;
+  padding-left: 100%;
+  padding-top: 100%;
+  margin-right: auto;
+  background-color: #FFE1AA;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+/* The following are style definitions fo the button used in the index.html file, */
+button {
+    background-color:teal;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin-top: 21px;
+    text-decoration: none;
+    font-size:50px;
+    padding: 15px 15px;
+    background-color: white;
+    border: black;
+    color: black;
+    position: center;
+    top: 1em;
+    left: 3em;
+    border: 8px solid black;
+    width: 15%;
+}
+.button:hover{
+  background-color:RoyalBlue;
+  color:White;
+  border: 8px solid darkblue;
+}
+
+#logbtn{
+	margin-right: 500px;
+	
+}
+
+img.forest{
+  width:70%;
+  height: auto;
+}
