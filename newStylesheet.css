@@ -91,8 +91,8 @@ ul.navbar {
 
 /* The following are style definitions for the table use in the main page */
 table {
-  width:170px;
-  height:100px;
+  width:auto;
+  height:auto;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: left;
@@ -130,7 +130,6 @@ button {
     font-size:50px;
     padding: 15px 15px;
     background-color: white;
-    border: black;
     color: black;
     position: center;
     top: 1em;
@@ -145,11 +144,35 @@ button {
 }
 
 #logbtn{
-	margin-right: 500px;
+/*	margin-right: 500px;*/
+	position: left;
+	border: 5px solid black;
+	background-color:teal;
+	color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 	
 }
 
-img.forest{
-  width:70%;
-  height: auto;
+#logoutbtn{
+/*	margin-right: 500px;*/
+	/*/position: left;*/
+	border: 5px solid black;
+	background-color:teal;
+	color: white;
+    
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	
+}
+
+.tblclr2 {
+	width: 70%;
+}
+
+#tblclr2 {
+	width: 70%;
 }

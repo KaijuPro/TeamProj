@@ -59,19 +59,22 @@ if (isset($_SESSION['loggedin'])){
 
 <body>
     <div id="header"><strong> You have successfuly logged in. </strong>
+		<a id="logoutbtn" href="MiALoginPage.html" style="float: right">Log Out</a>
 		<br>
 	<img src="MiA-logo.png" style="width:250px;height:70px;display: inline-block;" alt="companylogo">
 	</div>
 	
 
 <div id="main">
+	<a id="logbtn" href="CallsLogPage.html" style="float: right">Call Log</a>
 <h2>Make-it-All Helpdesk Call Log System
 </h2>
-	    <!--<p><a href="javascript://Save as TXT" id="submitLink">Save as TXT</a></p>-->
-		<button id="logbtn" style="float: right;" onClick="WriteToFile()" value="Log">Log</button>
+	
+  <!--<p><a href="javascript://Save as TXT" id="submitLink">Save as TXT</a></p>-->
+<!--		<button id="logbtn" style="float: right;" onClick="WriteToFile()" value="Log">Log</button>-->
 
 <!--	<form onSubmit="WriteToFile(this)">-->
-<!--	<form action="logHelp.php" method="post">-->
+  <form action="logHelp.php" method="post">
 <!--	<form action="untitled3.html" method="get">-->
 <table width="200" border="1" cellpadding="5">
   <tbody>
@@ -102,10 +105,9 @@ if (isset($_SESSION['loggedin'])){
 		<td><input id="importance" type="text"></td>
 		<td><input id="SpecName" type="text"></td>
     </tr>
-<!--
-	  <input type="submit" value="submit">
-	  </form>
--->
+		</table>
+	  <input id="logbtn" type="submit" value="Submit" style="float: centre; margin-right: 500px">
+</form>
 <!--	 <input id="logbtn" type="submit" value="Submit">-->
 <!--
 	  <input type="submit" value="submit">
