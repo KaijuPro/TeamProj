@@ -4,6 +4,8 @@ if (isset($_SESSION['loggedin'])){
 ?>
 <html>
 <head>
+	<meta charset="UTF-8">
+<title>Helpdesk Log Page</title>
 <!--
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="base64.js"></script>
@@ -66,7 +68,7 @@ if (isset($_SESSION['loggedin'])){
 	
 
 <div id="main">
-	<a id="logbtn" href="CallsLogPage.html" style="float: right">Call Log</a>
+	<a id="logbtn" href="CallsLogPage.php" style="float: right">Call Log</a>
 <h2>Make-it-All Helpdesk Call Log System
 </h2>
 	
@@ -80,7 +82,7 @@ if (isset($_SESSION['loggedin'])){
   <tbody>
     <tr>
       <th scope="col"></th>
-      <th scope="col" colspan=3>Caller</th>
+      <th scope="col" colspan=6>Caller</th>
       <th scope="col" colspan=3>PROBLEM</th>
       <th scope="col">SPECIALISTS</th>
       
@@ -90,6 +92,9 @@ if (isset($_SESSION['loggedin'])){
       <td>ID</td>
       <td>Name</td>
       <td>Date</td>
+		<td>Telephone</td>
+		<td>Department</td>
+		<td>Job Title</td>
       <td>Number</td>
       <td>Type</td>
 		<td>Importance</td>
@@ -100,6 +105,9 @@ if (isset($_SESSION['loggedin'])){
       <td><input id="identification" type="text"></td>
       <td><input id="name" name ="name" type="text"></td>
       <td><input id="date" type="date"></td>
+		<td><input id="tele" type="text"></td>
+		<td><select id="dept" >  <option value="" selected disabled hidden>Choose Department</option><option>Accounting</option><option>Logistics</option><option>Operations</option><option>HR</option></td>
+		<td><input id="title" type="text"></td>
       <td><input id="number" type="text"></td>
       <td><input id="type" type="text"></td>
 		<td><input id="importance" type="text"></td>
