@@ -31,7 +31,7 @@ if (isset($_SESSION['loggedin'])){
       <th scope="col" colspan="3" class="tblclr2" id="tblclr2">Caller</th>
       <th scope="col" colspan="3" class="tblclr2">PROBLEM</th>
       <th scope="col" class="tblclr21">SPECIALISTS</th>
-		<th scope="col" class="tblclr21">PROBLEM STATUS</th>
+		<th scope="col" colspan="2" class="tblclr21">PROBLEM STATUS</th>
       
     </tr>
     <tr>
@@ -44,6 +44,7 @@ if (isset($_SESSION['loggedin'])){
 		<td>Importance</td>
 		<td>Name</td>
 		<td>Rectified?</td>
+		<td>Resolved By</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -55,6 +56,7 @@ if (isset($_SESSION['loggedin'])){
 		<td>TEXT FROM SQL</td>
 		<td>TEXT FROM SQL</td>
 		<td><input type="checkbox" onClick="placeholder.php"></input></td>
+			<td><input type="text"></input></td>
     </tr>
 		</table>
 	</form>
