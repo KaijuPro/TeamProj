@@ -71,6 +71,7 @@ if (isset($_SESSION['loggedin'])){
 
 <div id="main">
 	<a id="logbtn" href="CallsLogPage.php" style="float: right">Call Log</a>
+	<a id="logbtn" href="SpecialistsPage.php" style="float: right">Specialists</a>
 <h2>Make-it-All Helpdesk Call Log System
 </h2>
 	
@@ -113,7 +114,7 @@ if (isset($_SESSION['loggedin'])){
       <td><input id="number" type="text"></td>
       <td><input id="type" type="text"></td>
 		<td><input id="importance" type="text"></td>
-		<td><input id="SpecName" type="text"></td>
+		<td><select id="SpecName" >  <option value="" selected disabled hidden>Choose Specialist</option><option>Name1</option><option>Name2</option><option>Name3</option><option>Name4</option></td>
     </tr>
 		</table>
 	  <input id="logbtn" type="submit" value="Submit" style="float: centre; margin-right: 500px">
@@ -168,6 +169,6 @@ $fh = fopen($path,"a+");
 <?php
 }
 else {
-	header("Location: Untitled.html");
+	header("Location: MiALoginPage.html");
 }
 ?>
