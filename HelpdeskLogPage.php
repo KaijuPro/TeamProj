@@ -56,10 +56,12 @@ if (isset($_SESSION['loggedin'])){
         s.Close();
      }
 	</script>
+	 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 <link rel="stylesheet" href="newStylesheet.css">
 </head>
 
 <body>
+	<div id="page_translation" style="background-color: #DAD7D7"></div>
     <div id="header"><strong> You have successfuly logged in. </strong>
 		<a id="logoutbtn" href="MiALoginPage.html" style="float: right">Log Out</a>
 		<br>
@@ -146,6 +148,11 @@ if (isset($_SESSION['loggedin'])){
   </tbody>
 </table>
 </div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'page_translation');
+}
+</script>
 </body>
 </html>
  <?php

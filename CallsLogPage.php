@@ -8,11 +8,13 @@ if (isset($_SESSION['loggedin'])){
 <head>
 <meta charset="UTF-8">
 <title>Log Page</title>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 <link href="newStylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
 
 <body>
+	<div id="page_translation" style="background-color: #DAD7D7;"></div>
 <div id="header">
 	<strong><a id="logbtn" href="HelpdeskLogPage.php" style="float: left">Back</a>
 	<a>Call Log</a> <br></strong>
@@ -58,6 +60,11 @@ if (isset($_SESSION['loggedin'])){
 	</form>
 	
 </div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'page_translation');
+}
+</script>
 </body>
 </html>
 <?php
